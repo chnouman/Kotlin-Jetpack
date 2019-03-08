@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="com.example.myapplication.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/toMessages" app:destination="@id/toMessages"
+                app:enterAnim="@anim/nav_default_pop_enter_anim" app:exitAnim="@anim/nav_default_pop_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/toFavourites"
+                app:destination="@id/myFavouritesFragment"/>
+        <action android:id="@+id/toAccount" app:destination="@id/myAccountFragment"/>
+        <action android:id="@+id/toSettings" app:destination="@id/settingsFragment"/>
+        <action android:id="@+id/toFaq" app:destination="@id/faqFragment"/>
+    </fragment>
+    <fragment android:id="@+id/toMessages" android:name="com.example.myapplication.MessagesFragment"
+              android:label="fragment_messages" tools:layout="@layout/fragment_messages"/>
+    <fragment android:id="@+id/myFavouritesFragment" android:name="com.example.myapplication.MyFavouritesFragment"
+              android:label="fragment_my_favourites" tools:layout="@layout/fragment_my_favourites"/>
+    <fragment android:id="@+id/myAccountFragment" android:name="com.example.myapplication.MyAccountFragment"
+              android:label="fragment_my_account" tools:layout="@layout/fragment_my_account"/>
+    <fragment android:id="@+id/settingsFragment" android:name="com.example.myapplication.SettingsFragment"
+              android:label="fragment_settings" tools:layout="@layout/fragment_settings"/>
+    <fragment android:id="@+id/faqFragment" android:name="com.example.myapplication.FaqFragment"
+              android:label="fragment_faq" tools:layout="@layout/fragment_faq"/>
+</navigation>
