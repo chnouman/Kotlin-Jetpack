@@ -23,11 +23,16 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //set title
+        activity?.title = "Home"
+
+
         message.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toMessages))
         favoutire.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toFavourites))
         account.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toAccount))
         settting.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toSettings))
         faq.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toFaq))
+        recyclerview.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toRecyclerview))
     }
 
 }

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
@@ -45,5 +46,15 @@
             android:id="@+id/faq"
             app:layout_constraintStart_toStartOf="@+id/settting" app:layout_constraintEnd_toEndOf="@+id/settting"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/settting"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <Button
+            android:text="GO TO RECYCLERVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            app:layout_constraintStart_toStartOf="@+id/faq"
+            app:layout_constraintEnd_toEndOf="@+id/faq"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faq"
             app:layout_constraintHorizontal_bias="0.5"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
